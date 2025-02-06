@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="icon.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="Desafio de Estágio – Frontend Developer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1c1c1c" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="google" content="notranslate" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon_120.png" />
+
+    <title>Player Um</title>
+</head>
+
+<body>
+    <div class="Cabecario__Container">
+        <h1>Desafio de Estágio – Frontend Developer</h1>
+        <h2>Player Um</h2>
+        <h2>Super ToDo List</h3>
+    </div>
+    <div class="Body__Container">
+        <div class="Todo__Container">
+            <div class="Input__Container">
+                <input class="Input" type="text" id="novaTarefa" placeholder="Adicione uma nova tarefa">
+                <button onclick="adicionarTarefa()" class="Botao__Adicionar"></button>
+            </div>
+            <div class="listaTarefas" id="listaTarefas"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
