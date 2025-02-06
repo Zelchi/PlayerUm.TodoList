@@ -26,6 +26,9 @@ const adicionarTarefa = () => {
 
             input.onblur = () => {
                 tarefaTexto.textContent = input.value;
+                if (input.value.trim() === '') {
+                    listaTarefas.removeChild(tarefa);
+                }
                 tarefa.replaceChild(tarefaTexto, input);
                 salvarTarefas();
             };
@@ -72,6 +75,9 @@ const carregarTarefas = () => {
 
             input.onblur = () => {
                 tarefaSpan.textContent = input.value;
+                if (input.value.trim() === '') {
+                    listaTarefas.removeChild(tarefa);
+                }
                 tarefa.replaceChild(tarefaSpan, input);
                 salvarTarefas();
             };
